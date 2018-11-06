@@ -4,9 +4,9 @@
   "description": "Port of pfrazee's pretty-hash function to output ByteArray data as a hex string",
   "main": "index.kt",
   "scripts": {
-    "build": "konanc index.kt $(konanc-config -clr konanc.kc) -p library -o pretty-hash.klib",
+    "build": "konanc index.kt $(konanc-config -clr pretty-hash.kc) -p library -o pretty-hash.klib",
     "postinstall": "npm run build",
-    "test": "konanc index.kt test.kt $(konanc-config -clr konanc.kc test.kc) -p program -o test.kexe && ./test.kexe"
+    "test": "konanc index.kt test.kt $(konanc-config -clr pretty-hash.kc test.kc) -p program -o test.kexe && ./test.kexe"
   },
   "keywords": [
     "datkt",
