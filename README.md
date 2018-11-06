@@ -25,6 +25,17 @@ fun main(args: Array<String>) {
 }
 ```
 
+## konanc Config
+
+Specify the following configuration in your modules `.kc` file for the
+`konanc-config`.
+
+```ini
+repo[] = "@datkt/pretty-hash"
+require[] = "pretty-hash"
+library[] = "pretty-hash"
+```
+
 ## API
 
 ### `prettyHash(bytes: Any? = null): String"`
@@ -39,6 +50,7 @@ Converts given input into a pretty hash string made of hex characters.
 ## See Also
 
 * https://github.com/pfrazee/pretty-hash
+* https://github.com/datkt/konanc-config
 
 ## License
 
