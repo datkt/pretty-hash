@@ -1,6 +1,6 @@
 {
   "name": "@datkt/pretty-hash",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Port of pfrazee's pretty-hash function to output ByteArray data as a hex string",
   "main": "index.kt",
   "scripts": {
