@@ -4,9 +4,9 @@
   "description": "Port of pfrazee's pretty-hash function to output ByteArray data as a hex string",
   "main": "index.kt",
   "scripts": {
-    "build": "konanc index.kt $(konanc-config -clr pretty-hash.kc) -p library -o pretty-hash.klib",
+    "build": "konanc index.kt $(konanc-config -clr lib.kc) -p library -o pretty-hash.klib",
     "postinstall": "npm run build",
-    "test": "konanc index.kt test.kt $(konanc-config -clr pretty-hash.kc test.kc) -p program -o test.kexe && ./test.kexe"
+    "test": "konanc test.kt $(konanc-config -clr . test.kc) -p program -o test.kexe && ./test.kexe"
   },
   "keywords": [
     "datkt",
@@ -21,7 +21,7 @@
   "author": "Joseph Werle <werle@littlstar.com>",
   "license": "MIT",
   "dependencies": {
-    "@datkt/bytes-from": "^1.0.1"
+    "@datkt/bytes-from": "^1.0.4"
   },
   "devDependencies": {
     "@datkt/tape": "^0.6.0"
